@@ -86,6 +86,10 @@ constructor(private readonly usersService: UsersService){}
 }
 ```
 
+# How to solve mindfucks
+
+- TypeORM module thinks options provided are for a mongodb database when it is actually for postgres. Mindfuck is to write ... `'postgres' as 'postgres'`. Check [this answer](https://github.com/nestjs/nest/issues/1119).
+
 # Resources
 ## Good reads
 
